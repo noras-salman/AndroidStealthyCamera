@@ -17,6 +17,8 @@ Nougat 7.0 – 7.1.2
 Oreo 8.0
 
 ## Installation
+
+#### Option 1
 Add the `stealthycamera-debug.aar` to your `libs` directory 
 
 In project level `build.gradle` add `flatDir`
@@ -38,9 +40,19 @@ dependencies {
        compile(name:'stealthycamera-debug', ext:'aar')
 }
 ```
+
+#### Option 2
+From android studio, Go to File > New module > Impor .jar/.aar file
 ## Dependencies
 `com.android.support:appcompat-v7:26.+`
 ## Usage
+Add the permissions to the Manifest 
+```
+<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+```
+
+If yout activity:
 ```java
 StealthyCamera stealthyCamera=new StealthyCamera(getApplicationContext());
 
@@ -91,6 +103,8 @@ StealthyCamera stealthyCamera=new StealthyCamera(getApplicationContext());
         stealthyCamera.takeShot();
         }
 ```
+
+If you don't want to use this from an activity make sure to ask for ther permissions your self.
 
 ## Contributing
 
