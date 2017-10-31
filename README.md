@@ -34,7 +34,7 @@ Then in app level `build.gradle` add
 
 ```
 dependencies {
-       compile(name:'cards', ext:'aar')
+       compile(name:'stealthycamera-debug', ext:'aar')
 }
 ```
 ## Dependencies
