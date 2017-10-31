@@ -1,5 +1,5 @@
 # Android StealthyCamera
- A library that allows you to take camera pictures without any UI. This can be triggered from a service or any other threads.
+ A library that allows you to take camera pictures without any UI. This can be triggered from a service or any other threads. 
 
 ## Tested on android versions:
 Ice Cream Sandwich 4.0 – 4.0.4	
@@ -17,8 +17,9 @@ Nougat 7.0 – 7.1.2
 Oreo 8.0
 
 ## Installation
+Add the `stealthycamera-debug.aar` to your `libs` directory 
 
- Project level `build.gradle` add `flatDir`
+In project level `build.gradle` add `flatDir`
 ```
 allprojects {
    repositories {
